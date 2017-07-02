@@ -102,6 +102,8 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
     // ===========================================================
     // Constructors
     // ===========================================================
+    protected HeaderAndFooterWrapper mHeaderAndFooterWrapper = new HeaderAndFooterWrapper();
+
 
     public PullToRefreshBase(Context context) {
         super(context);
@@ -1081,7 +1083,6 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
                 setOrientation(LinearLayout.VERTICAL);
                 break;
         }
-
         setGravity(Gravity.CENTER);
 
         ViewConfiguration config = ViewConfiguration.get(context);

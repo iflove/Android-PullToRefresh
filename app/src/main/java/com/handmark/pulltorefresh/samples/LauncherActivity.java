@@ -24,7 +24,7 @@ import android.widget.ListView;
 
 public class LauncherActivity extends ListActivity {
 
-    public static final String[] options = {"ListView", "ExpandableListView", "GridView", "WebView", "ScrollView",
+    public static final String[] options = {"RecyclerView", "ListView", "ExpandableListView", "GridView", "WebView", "ScrollView",
             "Horizontal ScrollView", "ViewPager", "ListView Fragment", "WebView Advanced", "ListView in ViewPager"};
 
     @Override
@@ -40,33 +40,36 @@ public class LauncherActivity extends ListActivity {
         switch (position) {
             default:
             case 0:
-                intent = new Intent(this, PullToRefreshListActivity.class);
+                intent = new Intent(this, PullToRefreshRecyclerViewListActivity.class);
                 break;
             case 1:
-                intent = new Intent(this, PullToRefreshExpandableListActivity.class);
+                intent = new Intent(this, PullToRefreshListActivity.class);
                 break;
             case 2:
-                intent = new Intent(this, PullToRefreshGridActivity.class);
+                intent = new Intent(this, PullToRefreshExpandableListActivity.class);
                 break;
             case 3:
-                intent = new Intent(this, PullToRefreshWebViewActivity.class);
+                intent = new Intent(this, PullToRefreshGridActivity.class);
                 break;
             case 4:
-                intent = new Intent(this, PullToRefreshScrollViewActivity.class);
+                intent = new Intent(this, PullToRefreshWebViewActivity.class);
                 break;
             case 5:
-                intent = new Intent(this, PullToRefreshHorizontalScrollViewActivity.class);
+                intent = new Intent(this, PullToRefreshScrollViewActivity.class);
                 break;
             case 6:
-                intent = new Intent(this, PullToRefreshViewPagerActivity.class);
+                intent = new Intent(this, PullToRefreshHorizontalScrollViewActivity.class);
                 break;
             case 7:
-                intent = new Intent(this, PullToRefreshListFragmentActivity.class);
+                intent = new Intent(this, PullToRefreshViewPagerActivity.class);
                 break;
             case 8:
-                intent = new Intent(this, PullToRefreshWebView2Activity.class);
+                intent = new Intent(this, PullToRefreshListFragmentActivity.class);
                 break;
             case 9:
+                intent = new Intent(this, PullToRefreshWebView2Activity.class);
+                break;
+            case 10:
                 intent = new Intent(this, PullToRefreshListInViewPagerActivity.class);
                 break;
         }

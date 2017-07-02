@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.handmark.pulltorefresh.samples"
-    android:versionCode="2110"
-    android:versionName="2.1.1">
-
-    <uses-sdk
-        android:minSdkVersion="4"
-        android:targetSdkVersion="15" />
+    package="com.handmark.pulltorefresh.samples">
+    <!-- For WebView Sample -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:hardwareAccelerated="true"
@@ -23,38 +19,39 @@
         </activity>
         <activity
             android:name=".PullToRefreshListActivity"
-            android:label="PtR ListView"></activity>
+            android:label="PtR ListView" />
+        <activity
+            android:name=".PullToRefreshRecyclerViewListActivity"
+            android:label="PtR RecyclerView" />
         <activity
             android:name=".PullToRefreshListFragmentActivity"
-            android:label="PtR ListView Fragment"></activity>
+            android:label="PtR ListView Fragment" />
         <activity
             android:name=".PullToRefreshListInViewPagerActivity"
-            android:label="PtR ListView in ViewPager"></activity>
+            android:label="PtR ListView in ViewPager" />
         <activity
             android:name=".PullToRefreshGridActivity"
-            android:label="PtR GridView"></activity>
+            android:label="PtR GridView" />
         <activity
             android:name=".PullToRefreshExpandableListActivity"
-            android:label="PtR ExpandableListView"></activity>
+            android:label="PtR ExpandableListView" />
         <activity
             android:name=".PullToRefreshWebViewActivity"
-            android:label="PtR WebView"></activity>
+            android:label="PtR WebView" />
         <activity
             android:name=".PullToRefreshScrollViewActivity"
-            android:label="PtR ScrollView"></activity>
+            android:label="PtR ScrollView" />
         <activity
             android:name=".PullToRefreshHorizontalScrollViewActivity"
-            android:label="PtR HorizontalScrollView"></activity>
+            android:label="PtR HorizontalScrollView" />
         <activity
             android:name=".PullToRefreshViewPagerActivity"
-            android:label="PtR ViewPager"></activity>
+            android:label="PtR ViewPager" />
         <activity
             android:name=".PullToRefreshWebView2Activity"
-            android:label="PtR WebView Advanced"></activity>
+            android:label="PtR WebView Advanced" />
     </application>
 
-    <!-- For WebView Sample -->
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <supports-screens android:anyDensity="true" />
 
