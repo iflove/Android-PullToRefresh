@@ -32,6 +32,7 @@ import android.widget.AdapterView;
 import android.widget.FrameLayout;
 
 import com.handmark.pulltorefresh.library.internal.EmptyViewMethodAccessor;
+import com.handmark.pulltorefresh.library.internal.HeaderAndFooterWrapper;
 import com.handmark.pulltorefresh.library.internal.IndicatorLayout;
 
 public abstract class PullToRefreshRecyclerViewAdapterViewBase<T extends RecyclerView> extends PullToRefreshBase<T> {

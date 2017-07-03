@@ -1,4 +1,4 @@
-package com.handmark.pulltorefresh.library;
+package com.handmark.pulltorefresh.library.internal;
 
 import android.support.v4.util.SparseArrayCompat;
 import android.support.v7.widget.GridLayoutManager;
@@ -7,9 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-/**
- * Created by zhy on 16/6/23.
- */
 public class HeaderAndFooterWrapper<T> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private static final int BASE_ITEM_TYPE_HEADER = 100000;
     private static final int BASE_ITEM_TYPE_FOOTER = 200000;
@@ -126,7 +123,7 @@ public class HeaderAndFooterWrapper<T> extends RecyclerView.Adapter<RecyclerView
         return mFootViews.size();
     }
 
-    RecyclerView.Adapter getInnerAdapter() {
+    public RecyclerView.Adapter getInnerAdapter() {
         return mInnerAdapter;
     }
 }

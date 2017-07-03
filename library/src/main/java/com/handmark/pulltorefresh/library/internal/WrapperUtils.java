@@ -1,4 +1,4 @@
-package com.handmark.pulltorefresh.library;
+package com.handmark.pulltorefresh.library.internal;
 
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;

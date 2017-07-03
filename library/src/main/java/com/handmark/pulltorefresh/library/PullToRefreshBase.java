@@ -35,6 +35,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
 import com.handmark.pulltorefresh.library.internal.FlipLoadingLayout;
+import com.handmark.pulltorefresh.library.internal.HeaderAndFooterWrapper;
 import com.handmark.pulltorefresh.library.internal.LoadingLayout;
 import com.handmark.pulltorefresh.library.internal.RotateLoadingLayout;
 import com.handmark.pulltorefresh.library.internal.Utils;
@@ -99,10 +100,12 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 
     private SmoothScrollRunnable mCurrentSmoothScrollRunnable;
 
+    //super RecyclerView Header
+    protected HeaderAndFooterWrapper mHeaderAndFooterWrapper = new HeaderAndFooterWrapper();
+
     // ===========================================================
     // Constructors
     // ===========================================================
-    protected HeaderAndFooterWrapper mHeaderAndFooterWrapper = new HeaderAndFooterWrapper();
 
 
     public PullToRefreshBase(Context context) {

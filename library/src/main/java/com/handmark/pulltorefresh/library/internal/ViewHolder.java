@@ -1,4 +1,4 @@
-package com.handmark.pulltorefresh.library;
+package com.handmark.pulltorefresh.library.internal;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
